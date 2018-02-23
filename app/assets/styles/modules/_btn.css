@@ -1,7 +1,9 @@
 .btn {
   background-color: $mainBlue;
   color: #FFF;
+  /*This removes the hyperlink underlien and color*/
   text-decoration: none;
+  /*This line below will create .75rem padding on the sides and 1.2rem on the top and bottom*/
   padding: .75rem 1.2rem;
   display: inline-block;
 
@@ -10,7 +12,11 @@
   }
 
   &--large {
-    font-size: 1.25rem;
     padding: 1.1rem 1.9rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
   }
+
 }
